@@ -1,7 +1,7 @@
 <?php
-$censored_word = $_GET[strtolower(trim('censored-word'))];
-$paragraph = $_GET[strtolower(trim('paragraph'))];
-$censored_paragraph = str_replace($censored_word, '***', $paragraph);
+$censored_word = $_GET[trim('censored-word')];
+$paragraph = $_GET[trim('paragraph')];
+$censored_paragraph = str_replace(strtolower($censored_word), '***', strtolower($paragraph));
 ?>
 
 
